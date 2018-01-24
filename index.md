@@ -1,5 +1,7 @@
 ---
 ---
+# ⚰️⚰️⚰️⚰️⚰️⚰️⚰️⚰️⚰️
+
 {% for post in site.posts %}
-{{post}}
+* {{post.name}}
 {% endfor %}
