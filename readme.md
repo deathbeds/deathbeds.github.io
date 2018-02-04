@@ -3,15 +3,14 @@
 
 
 
+<iframe 
+    src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Ffjucc5gnS2PLr5TCmECyfsXttm8ya0bT7nYAYZJkcc&font=Default&lang=en&initial_zoom=2&height=650" width="100%" height="650" 
+    webkitallowfullscreen 
+    mozallowfullscreen 
+    allowfullscreen 
+    frameborder="0"></iframe>
 
 
-        <iframe
-            width="800"
-            height="600"
-            src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Ffjucc5gnS2PLr5TCmECyfsXttm8ya0bT7nYAYZJkcc&font=Default&lang=en&initial_zoom=30"
-            frameborder="0"
-            allowfullscreen
-        ></iframe>
-        
-
+    [NbConvertApp] Converting notebook readme.ipynb to markdown
+    [NbConvertApp] Writing 167 bytes to readme.md
 
