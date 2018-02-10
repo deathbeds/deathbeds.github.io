@@ -15,4 +15,4 @@ dependencies:
   - pip:
     - jupyterlab-discovery
     - rise
-    - https://github.com/deathbeds/XXX/archive/1d0470d0771739988e27acc4981fe26969ea1471.tar.gz
+    - https://github.com/deathbeds/XXX/archive/master.tar.gz

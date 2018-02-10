@@ -25,5 +25,5 @@ dependencies:
   - pip:
     - monkeytype
     - retype
-    - https://github.com/deathbeds/aye/archive/bc2918d0f89d22861cf3afc02f9c28a3fb54bf7a.tar.gz
-    - https://github.com/sympy/sympy/archive/1e8b5da3edbdbfe23cb664e1fe4982d88133c9b9.tar.gz
+    - https://github.com/deathbeds/aye/archive/master.tar.gz
+    - https://github.com/sympy/sympy/archive/master.tar.gz
