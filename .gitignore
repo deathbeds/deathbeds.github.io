@@ -105,3 +105,6 @@ venv.bak/
 
 
 _site
+
+.notes
+node_modules/
