@@ -12,7 +12,7 @@ dependencies:
   - jupyterlab
   - pythreejs
   - vaex
-  - jupyter-themes
+  - jupyterthemes
   - jupyter_contrib_nbextensions
   - pip:
     - jupyterlab-discovery
