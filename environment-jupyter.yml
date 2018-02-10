@@ -12,6 +12,8 @@ dependencies:
   - jupyterlab
   - pythreejs
   - vaex
+  - jupyter-themes
+  - jupyter_contrib_nbextensions
   - pip:
     - jupyterlab-discovery
     - rise
