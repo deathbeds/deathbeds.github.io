@@ -47,13 +47,13 @@ RUN jupyter lab build \
 
 # add the notebooks
 COPY [ \
-  "notebooks", \
-  "/home/jovyan/notebooks" \
+  ".", \
+  "/home/jovyan/" \
 ]
 
 # fix permissions
 USER root
-RUN chown -R ${NB_UID} ${HOME}/notebooks
+RUN chown -R ${NB_UID} ${HOME}
 
 # switch back to normal user
 USER ${NB_USER}
