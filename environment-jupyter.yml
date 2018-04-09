@@ -17,4 +17,7 @@ dependencies:
   - pip:
     - jupyterlab-discovery
     - rise
+    - vdom
     - https://github.com/deathbeds/XXX/archive/master.tar.gz
+    - https://github.com/deathbeds/rites/archive/master.tar.gz
+    - https://github.com/deathbeds/poser/archive/master.tar.gz
