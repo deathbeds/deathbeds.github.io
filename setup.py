@@ -11,4 +11,5 @@ __import__('setuptools').setup(
     description="sand to sand, silicon to silicon", 
     license="BSD-3-Clause",
     packages=['deathbeds'],
+    install_requires=['importnb', 'poser'],
     include_package_data=True)
