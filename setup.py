@@ -1,6 +1,6 @@
 from pathlib import Path
 
-with Path(__file__).parent / 'deathbeds' / '_version.py' as file:
+with (Path(__file__).parent / 'deathbeds' / '_version.py').open('r') as file:
     exec(file.read())
 
 __import__('setuptools').setup(
