@@ -21,7 +21,7 @@ dependencies:
   - matplotlib
   - monkeytype
   - networkx
-  - nodejs
+  - nodejs >=8,<9
   - notebook
   - pandas
   - pygraphviz
