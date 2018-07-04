@@ -1,0 +1,24 @@
+language: python
+python:
+- '3.6'
+
+install:
+- python setup.py sdist
+- python setup.py bdist_wheel
+- pip install -r requirements.txt
+- ipython profile create default
+- importnb-install
+- python -m pip install dist/deathbeds-*.tar.gz --ignore-installed --no-deps
+
+script:
+- ipython -m pytest
+
+deploy:
+  provider: pypi
+  user: docfast
+  password:
+    secure: 2Xv4H56OlSdei4p6BzW8b8RYtou4yihEWBzV4iAVqytu/T1Of3KKb3kwNW9Oqs4NzIRR077xJhEn8SP0PmIWYrGAH6l6hjf2copJcMzq4DPMEECUbGkADcbWAOhi3PIY2UD1xoAkTwQoP8rm6yMez+zfakpej7p1M47Zi01shHVsUTUshAa0VLukZJcDcfrDEOfeNZ+UifFII6ET9BMFEqJ0p62gJQnwu7TOknbYJi6iEbbksdhJRx25ezCauqJLRG0SOKF6NN4J+AUrAep9rmACDSX5OhptI5VcgpztDDkfbIow0P4QzkW1g5W/18iZoLDjBVk9iUKq99OHykj7Au90PZofRq6Ow1ysmvi7FZM4p4VGehlbTMxfnVAfcnnf7tGfrx+6dArDh4rlvMBAHS7N96LKHlQZ3jbK3SQo+CJcPxkENb7DvgprQgw/Mj35Cxt36P3FeJqPrd2MVZ2SMSO65Exca36GCkM7FT3KRKDPjkVrrhmT2p6g0bAduccW5ShYOzmDNLjP4+osbdjKjV00V7rLzaZtYt9q3zHJv0hJewJWNYBCZsMK78BGtL3iBh300VS4QKdLV+ZxrvmJQB1xb1nBklGg7LHYRdslwLtxZyNeUR0Sj0dTzDxuCgFx0e/NUfK975HUsZ69YWLqVpW9YIhSoW+r7+KNCxxsZeo=
+  on:
+    tags: true
+    distributions: sdist bdist_wheel
+    repo: deathbeds/deathbeds.github.io
