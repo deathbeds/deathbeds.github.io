@@ -10,6 +10,9 @@ install:
 - importnb-install
 - python -m pip install dist/deathbeds-*.tar.gz --ignore-installed --no-deps
 
+before_install:
+- sudo apt-get install graphviz
+
 script:
 # on a branch only the notebook on the branch should run; on master everything.
 - jupyter nbconvert --execute --ExecutePreprocessor.kernel_name=python --to notebook deathbeds/*.ipynb
