@@ -1,3 +1,11 @@
+sympy
+depfinder
 pytest
+jinja2
 importnb
-notebook
+scikit-image
+datashape
+toolz
+ipython
+poser
+numpy
