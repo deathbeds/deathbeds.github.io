@@ -1,6 +1,7 @@
 sympy
 depfinder
 pytest
+pandas
 jinja2
 importnb
 scikit-image
