@@ -10,3 +10,4 @@ toolz
 ipython
 poser
 numpy
+jupyter
