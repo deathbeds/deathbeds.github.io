@@ -11,7 +11,8 @@ install:
 - python -m pip install dist/deathbeds-*.tar.gz --ignore-installed --no-deps
 
 script:
-- ipython -m pytest
+# on a branch only the notebook on the branch should run; on master everything.
+- jupyter nbconvert --execute --to notebook deathbeds/*.ipynb
 
 deploy:
   provider: pypi
