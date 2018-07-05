@@ -9,9 +9,9 @@ toolz
 jupyter
 pyyaml
 nbconvert
+graphviz
 luigi
 scikit-image
-deathbeds
 ipython
 jinja2
 importnb
