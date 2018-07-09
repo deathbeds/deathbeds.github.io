@@ -108,3 +108,4 @@ _site
 
 .notes
 node_modules/
+envs/

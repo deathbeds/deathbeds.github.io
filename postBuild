@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -ex
+
+LABEXTENSIONS='
+  @jupyter-widgets/jupyterlab-manager@0.35.0
+  @jupyterlab/hub-extension@0.9.2
+  bqplot@0.3.6
+  ipyvolume@0.4.6
+  jupyter-leaflet@0.9.0
+  jupyter-threejs@1.1.0
+  jupyterlab_bokeh@0.5.0
+  jupyterlab-toc@0.2.1
+  '
+
+jupyter nbextension install rise --py --sys-prefix --symlink
+jupyter nbextension enable rise --py --sys-prefix
+
+jupyter labextension install --no-build ${LABEXTENSIONS}
+jupyter lab build --dev
+jupyter labextension list | sort

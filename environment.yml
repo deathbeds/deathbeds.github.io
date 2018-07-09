@@ -1,4 +1,4 @@
-name: _surface-dev
+name: deathbeds
 
 channels:
   - conda-forge
@@ -8,22 +8,34 @@ dependencies:
   - antlr >=4,<5
   - antlr-python-runtime >=4,<5
   - bokeh
+  - bqplot
   - click
+  - datashape
   - giflib
-  - jupyterlab_launcher
+  - importnb
+  - ipyleaflet
+  - ipyvolume
+  - ipywidgets
+  - jupyterlab >=0.32,<0.33
   - libpng
   - matplotlib
+  - monkeytype
   - networkx
-  - nodejs
+  - nodejs >=8,<9
   - notebook
   - pandas
   - pygraphviz
   - python >=3.6,<3.7
+  - pythreejs
+  - retype
+  - scikit-image
   - seaborn
   - setuptools
+  - shapely
+  - sympy
+  - toolz
   - typed-ast
+  - xlrd
+  - rise
   - pip:
-    - monkeytype
-    - retype
-    - https://github.com/deathbeds/aye/archive/master.tar.gz
-    - https://github.com/sympy/sympy/archive/master.tar.gz
+    - poser
