@@ -15,7 +15,7 @@ before_install:
 
 script:
 # on a branch only the notebook on the branch should run; on master everything.
-- ipython -m pytest -- --nbval deathbeds
+- ipython -m pytest -- --nbval --current-env deathbeds
 
 deploy:
   provider: pypi
