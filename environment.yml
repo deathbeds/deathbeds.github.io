@@ -40,3 +40,4 @@ dependencies:
   - rise
   - pip:
     - poser
+    - nbval

@@ -12,3 +12,4 @@ jinja2
 sympy
 pytest
 depfinder
+nbval
