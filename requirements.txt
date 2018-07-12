@@ -13,3 +13,5 @@ sympy
 pytest
 depfinder
 nbval
+opencv-python
+pandas
