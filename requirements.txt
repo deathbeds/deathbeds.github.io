@@ -30,7 +30,6 @@ markupsafe
 ipywidgets
 sympy
 mpmath
-gmpy2
 fastcache
 tensorflow
 numpy
