@@ -8,7 +8,7 @@ pygments
 pexpect
 ptyprocess
 pickleshare
-prompt_toolkit
+prompt-toolkit==1.0.15
 wcwidth
 simplegeneric
 jedi
@@ -30,6 +30,7 @@ markupsafe
 ipywidgets
 sympy
 mpmath
+gmpy2
 fastcache
 tensorflow
 numpy
@@ -90,4 +91,3 @@ port_for
 livereload
 watchdog
 pathtools
-prompt-toolkit==1.0.15
