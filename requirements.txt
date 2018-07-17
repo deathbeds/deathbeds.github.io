@@ -90,3 +90,4 @@ port_for
 livereload
 watchdog
 pathtools
+prompt-toolkit==1.0.15
