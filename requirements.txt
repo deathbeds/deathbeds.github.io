@@ -1,4 +1,3 @@
-sphinxcontrib
 ipykernel
 IPython
 traitlets
@@ -92,3 +91,8 @@ tqdm
 pytest
 pluggy
 more_itertools
+sphinx_autobuild
+port_for
+livereload
+watchdog
+pathtools
