@@ -90,3 +90,5 @@ port_for
 livereload
 watchdog
 pathtools
+importnb
+pidgin
