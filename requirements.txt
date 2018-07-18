@@ -16,7 +16,6 @@ cytoolz
 dask
 dataclasses
 datashape
-deathbeds
 decorator
 entrypoints
 fastcache
