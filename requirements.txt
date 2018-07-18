@@ -17,7 +17,7 @@ dask
 dataclasses
 datashape
 decorator
-delegator
+delegator.py
 entrypoints
 fastcache
 flask
