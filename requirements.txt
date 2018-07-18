@@ -20,10 +20,14 @@ jupyter_core
 tornado
 simplejson
 ipyparallel
+importnb
 importlib_resources
+black
 appdirs
 attr
 click
+blib2to3
+pidgin
 CommonMark
 jinja2
 markupsafe
@@ -40,7 +44,9 @@ bottleneck
 matplotlib
 pyparsing
 cycler
+poser
 dataclasses
+deathbeds
 requests
 urllib3
 chardet
@@ -90,5 +96,3 @@ port_for
 livereload
 watchdog
 pathtools
-importnb
-pidgin
