@@ -22,13 +22,13 @@ entrypoints
 fastcache
 flask
 git+https://github.com/deathbeds/depfinder@ipython-code-transform
+git+https://github.com/deathbeds/importnb
 git+https://github.com/deathbeds/pidgin
 google
 graphviz
 greenlet
 idna
 importlib_resources
-importnb
 ipykernel
 ipyparallel
 IPython
