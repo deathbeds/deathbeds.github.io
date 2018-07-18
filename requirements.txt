@@ -22,6 +22,7 @@ entrypoints
 fastcache
 flask
 git+https://github.com/deathbeds/depfinder@ipython-code-transform
+git+https://github.com/deathbeds/pidgin
 google
 graphviz
 greenlet
@@ -59,7 +60,6 @@ pandas
 pandocfilters
 pexpect
 pickleshare
-pidgin
 pillow
 pluggy
 poser
