@@ -1,2 +1,3 @@
 include LICENSE readme.md 
 recursive-include deathbeds *.ipynb
+include deathbeds/data
