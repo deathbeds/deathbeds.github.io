@@ -1,1 +1,1 @@
-from importnb import Interactive
+from . import data
