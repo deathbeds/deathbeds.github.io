@@ -20,6 +20,7 @@ decorator
 entrypoints
 fastcache
 flask
+git+https://github.com/deathbeds/depfinder@ipython-code-transform
 google
 graphviz
 greenlet
@@ -37,7 +38,6 @@ jinja2
 jsonschema
 jupyter_client
 jupyter_core
-livereload
 luigi
 lxml
 markupsafe
@@ -52,16 +52,13 @@ nbformat
 notebook
 numpy
 numpydoc
-opencv-python
 pandas
 pandocfilters
-pathtools
 pexpect
 pickleshare
 pidgin
 pillow
 pluggy
-port_for
 poser
 prompt-toolkit==1.0.15
 ptyprocess
@@ -79,7 +76,7 @@ shapely
 simplegeneric
 simplejson
 six
-sphinx_autobuild
+stdlib_list
 sympy
 tensorflow
 testpath
@@ -89,7 +86,6 @@ tqdm
 traitlets
 typed_ast
 urllib3
-watchdog
 wcwidth
 werkzeug
 xlrd
