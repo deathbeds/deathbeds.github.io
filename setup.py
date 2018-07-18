@@ -10,6 +10,6 @@ __import__('setuptools').setup(
     author_email="tony.fast@gmail.com",
     description="sand to sand, silicon to silicon", 
     license="BSD-3-Clause",
-    packages=['deathbeds'],
+    packages=['deathbeds', 'deathbeds.data'],
     install_requires=['importnb', 'poser'],
     include_package_data=True)
