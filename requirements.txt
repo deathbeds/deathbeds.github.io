@@ -52,6 +52,8 @@ nbformat
 notebook
 numpy
 numpydoc
+opencv-python
+opencv-python
 pandas
 pandocfilters
 pexpect
