@@ -1,0 +1,7 @@
+tricks:
+- watchdog.tricks.ShellCommandTrick:
+    patterns: ['*.ipynb']
+    drop_during_process: yes 
+    ignore_patterns: ['*-checkpoint.ipynb', '*~*.ipynb']
+    # shell_command: ipython -m pytest -- --main -s ${watch_src_path}
+    shell_command: ipython -m deathbeds.2018-07-16-Testing-restart-run-all ${watch_src_path}
