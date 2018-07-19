@@ -16,7 +16,7 @@ before_install:
 
 script:
 # on a branch only the notebook on the branch should run; on master everything.
-- jupyter nbconvert --execute --ExecutePreprocessor.kernel_name=python --to notebook deathbeds/*.ipynb
+- ls deathbeds/*.ipynb | xargs jupyter nbconvert --execute --ExecutePreprocessor.kernel_name=python --to notebook
 
 deploy:
   provider: pypi
