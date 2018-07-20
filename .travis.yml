@@ -15,7 +15,10 @@ before_install:
   - /bin/bash ./.ci/travis_before_install.sh
 
 install:
-  - /bin/bash ./.ci/travis_install.sh
+  - |-
+    /bin/bash ./.ci/travis_install.sh \
+    || /bin/bash ./.ci/travis_install.sh \
+    || /bin/bash ./.ci/travis_install.sh
 
 script:
   - /bin/bash ./.ci/travis_script.sh
