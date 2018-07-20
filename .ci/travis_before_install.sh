@@ -14,7 +14,3 @@ echo "a946ea1d0c4a642ddf0c3a26a18bb16d *Miniconda3-${MINICONDA_VERSION}-Linux-x8
 $CONDA_DIR/bin/conda config --system --prepend channels conda-forge
 $CONDA_DIR/bin/conda config --system --set auto_update_conda false
 $CONDA_DIR/bin/conda config --system --set show_channel_urls true
-
-$CONDA_DIR/bin/conda install --quiet --yes conda="${MINICONDA_VERSION%.*}.*"
-
-$CONDA_DIR/bin/conda update --all --quiet --yes
