@@ -9,8 +9,10 @@ dependencies:
   - antlr-python-runtime >=4,<5
   - bokeh
   - bqplot
+  - cadquery
   - click
   - datashape
+  - freecad
   - giflib
   - importnb
   - ipyleaflet
