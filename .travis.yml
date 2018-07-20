@@ -3,7 +3,7 @@ language: c
 sudo: false
 
 env:
-  - MINICONDA_VERSION=4.5.4 CONDA_DIR=$HOME/miniconda3 CONDA_PREFIX=$HOME/miniconda3 PATH=$CONDA_PREFIX/bin:$PATH
+  - MINICONDA_VERSION=4.5.4 CONDA_DIR=$HOME/miniconda3
 
 cache:
   directories:
@@ -12,33 +12,13 @@ cache:
     - $CONDA_DIR/pkgs
 
 before_install:
-  - |-
-    set -ex && \
-    mkdir -p ${HOME}/download && \
-    cd ${HOME}/download && \
-    wget -N --quiet https://repo.continuum.io/miniconda/Miniconda3-${MINICONDA_VERSION}-Linux-x86_64.sh && \
-    echo "a946ea1d0c4a642ddf0c3a26a18bb16d *Miniconda3-${MINICONDA_VERSION}-Linux-x86_64.sh" | md5sum -c - && \
-    /bin/bash Miniconda3-${MINICONDA_VERSION}-Linux-x86_64.sh -f -b -p $CONDA_DIR \
-  - |-
-    $CONDA_DIR/bin/conda config --system --prepend channels conda-forge && \
-    $CONDA_DIR/bin/conda config --system --set auto_update_conda false && \
-    $CONDA_DIR/bin/conda config --system --set show_channel_urls true
-  - $CONDA_DIR/bin/conda install --quiet --yes conda="${MINICONDA_VERSION%.*}.*"
-  - $CONDA_DIR/bin/conda update --all --quiet --yes
+  - /bin/bash ./.ci/travis_before_install.sh
 
 install:
-  - $CONDA_DIR/bin/python setup.py sdist
-  - $CONDA_DIR/bin/python setup.py bdist_wheel
-  - $CONDA_DIR/bin/conda env update -n root -f environment.yml
-  - $CONDA_DIR/bin/python -m pip install -r requirements.txt
-  - $CONDA_DIR/bin/python -m ipython profile create default
-  - $CONDA_DIR/bin/importnb-install
-  - $CONDA_DIR/bin/python -c "__import__('importnb.utils.ipython').utils.ipython.install('pidgin')"
-  - $CONDA_DIR/bin/python -m pip install dist/deathbeds-*.tar.gz --ignore-installed --no-deps
+  - /bin/bash ./.ci/travis_install.sh
 
 script:
-# on a branch only the notebook on the branch should run; on master everything.
-- ls deathbeds/*.ipynb | xargs $CONDA_DIR/bin/python -m jupyter nbconvert --execute --ExecutePreprocessor.kernel_name=python --to notebook
+  - /bin/bash ./.ci/travis_script.sh
 
 deploy:
   provider: pypi
