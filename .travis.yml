@@ -3,10 +3,7 @@ language: c
 sudo: false
 
 env:
-  - MINICONDA_VERSION=4.5.4
-  - CONDA_DIR=$HOME/miniconda3
-  - CONDA_PREFIX=$HOME/miniconda3
-  - PATH=$CONDA_PREFIX/bin:$PATH
+  - MINICONDA_VERSION=4.5.4 CONDA_DIR=$HOME/miniconda3 CONDA_PREFIX=$HOME/miniconda3 PATH=$CONDA_PREFIX/bin:$PATH
 
 cache:
   directories:
