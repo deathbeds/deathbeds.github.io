@@ -6,8 +6,6 @@ source $CONDA_DIR/bin/activate base
 python setup.py sdist
 python setup.py bdist_wheel
 
-conda install -yq nomkl
-
 for i in {1..3}
 do conda env update -n root -f environment.yml && break || sleep 1
 done
