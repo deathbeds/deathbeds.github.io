@@ -1,42 +1,122 @@
 name: deathbeds
 
 channels:
-  - conda-forge
   - defaults
+  - conda-forge
 
 dependencies:
+  - appdirs
+  - beautifulsoup4
+  - black
   - bokeh
+  - bottleneck
   - bqplot
   - cadquery
+  - certifi
+  - cffi
+  - chardet
   - click
+  - cloudpickle
+  - colorama
+  - commonmark
+  - cryptography
+  - cycler
+  - cytoolz
+  - dask
+  - dataclasses
   - datashape
+  - decorator
+  - delegator
+  - entrypoints
+  - fastcache
+  - flask
   - freecad
   - giflib
+  - graphviz
+  - greenlet
+  - idna
+  - importlib_resources
   - importnb
+  - ipykernel
   - ipyleaflet
+  - ipyparallel
+  - IPython
+  - ipython_genutils
   - ipyvolume
   - ipywidgets
+  - itsdangerous
+  - jedi
+  - jinja2
+  - joblib
+  - jsonschema
+  - jupyter_client
+  - jupyter_core
   - jupyterlab >=0.32,<0.33
   - libpng
+  - luigi
+  - lxml
+  - markupsafe
   - matplotlib
+  - mistune
   - monkeytype
+  - more-itertools
+  - mpmath
+  - multipledispatch
+  - mypy
+  - nbconvert
   - nbdime
+  - nbformat
   - networkx
   - nodejs >=8,<9
+  - nomkl
   - notebook
+  - numpy
+  - numpydoc
+  - opencv
   - pandas
+  - pandocfilters
+  - pexpect
+  - pickleshare
+  - pillow
+  - pluggy
+  - prompt_toolkit
+  - ptyprocess
+  - py
+  - pygments
   - pygraphviz
+  - pyparsing
+  - pytest
   - python >=3.6,<3.7
   - pythreejs
+  - pytz
+  - pyyaml
+  - pyzmq
+  - requests
   - retype
+  - rise
   - scikit-image
+  - scipy
   - seaborn
   - setuptools
   - shapely
+  - simplegeneric
+  - simplejson
+  - six
+  - stdlib-list
   - sympy
+  - tensorflow
+  - testpath
   - toolz
+  - tornado
+  - tqdm
+  - traitlets
   - typed-ast
+  - urllib3
+  - wcwidth
+  - werkzeug
   - xlrd
-  - rise
   - pip:
+    - attr
+    - google
     - poser
+    - pywt

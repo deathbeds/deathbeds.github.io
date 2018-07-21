@@ -21,9 +21,6 @@ delegator.py
 entrypoints
 fastcache
 flask
-git+https://github.com/deathbeds/depfinder@ipython-code-transform
-git+https://github.com/deathbeds/importnb
-git+https://github.com/deathbeds/pidgin
 google
 graphviz
 greenlet
@@ -93,3 +90,4 @@ wcwidth
 werkzeug
 xlrd
 zmq
+-r requirements-git.txt

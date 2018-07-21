@@ -8,11 +8,13 @@ python setup.py bdist_wheel
 
 conda install -yq nomkl
 
-conda env update -n root -f environment.yml
+for i in {1..3}
+do conda env update -n root -f environment.yml && break || sleep 1
+done
 
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-git.txt
 
-python -m ipython profile create default
+ipython profile create default
 
 importnb-install
 
