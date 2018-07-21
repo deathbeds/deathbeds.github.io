@@ -2,14 +2,16 @@ language: c
 
 sudo: false
 
+dist: trusty
+
 env:
   - MINICONDA_VERSION=4.5.4 CONDA_DIR=$HOME/miniconda3
 
 cache:
   directories:
-    - $HOME/.cache/pip
     - $HOME/download
-    - $CONDA_DIR/pkgs
+    # - $HOME/.cache/pip
+    # - $CONDA_DIR/pkgs
 
 before_install:
   - /bin/bash ./.ci/travis_before_install.sh
