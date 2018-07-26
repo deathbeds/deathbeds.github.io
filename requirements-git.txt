@@ -1,0 +1,3 @@
+git+https://github.com/deathbeds/depfinder@ipython-code-transform
+git+https://github.com/deathbeds/importnb
+git+https://github.com/deathbeds/pidgin
