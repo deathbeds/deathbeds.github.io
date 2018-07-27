@@ -1,0 +1,47 @@
+defaults: &defaults
+  working_directory: /home/jovyan
+  docker:
+    - image: jupyter/scipy-notebook:8d22c86ed4d7
+
+version: 2
+
+jobs:
+  deathbeds:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Build a source distribution
+          command: python setup.py sdist
+      - run:
+          name: Build a python wheel
+          command: python setup.py bdist_wheel
+      - run:
+          name: Update the the conda environment
+          command: conda env update -n root --file enviroment.yml
+      - run:
+          name: Update the irregular requirements
+          command: python -m pip install -r requirements-git.txt
+      - run:
+          name: Apply the importnb global hack
+          command: importnb-install
+      - run:
+          name: Apply the pidgin global hack
+          command: python -c "__import__('importnb.utils.ipython').utils.ipython.install('pidgin')"
+      - run:
+          name: Install this site
+          command: python -m pip install dist/deathbeds-*.tar.gz --ignore-installed --no-deps
+      - run:
+          name: Run the notebooks
+          command: |-
+            ls deathbeds/*.ipynb |
+              xargs python -m jupyter nbconvert \
+                --execute \
+                --ExecutePreprocessor.kernel_name=python \
+                --to notebook
+
+workflows:
+  version: 2
+  deathbeds:
+    jobs:
+      - deathbeds
