@@ -18,7 +18,7 @@ jobs:
           command: python setup.py bdist_wheel
       - run:
           name: Update the the conda environment
-          command: conda env update -n root --file enviroment.yml
+          command: conda env update -n root --file environment.yml
       - run:
           name: Update the irregular requirements
           command: python -m pip install -r requirements-git.txt
