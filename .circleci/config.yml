@@ -1,7 +1,7 @@
 version: 2
 
 defaults: &defaults
-  working_directory: /home/jovyan
+  working_directory: /home/jovyan/deathbeds
   docker:
     - image: jupyter/scipy-notebook:8d22c86ed4d7
 
