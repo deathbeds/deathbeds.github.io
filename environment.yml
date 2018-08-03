@@ -115,6 +115,7 @@ dependencies:
   - wcwidth
   - werkzeug
   - xlrd
+  - qrcode
   - pip:
     - attr
     - google
