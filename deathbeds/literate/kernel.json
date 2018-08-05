@@ -1,0 +1,1 @@
+{"argv": ["python", "-m", "deathbeds.literate_kernel", "-f", "{connection_file}"], "display_name": "literate", "name": "literate", "language": "python"}

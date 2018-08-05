@@ -1,21 +1,26 @@
-language: python
-python:
-- '3.6'
+language: c
 
-install:
-- python setup.py sdist
-- python setup.py bdist_wheel
-- pip install -r requirements.txt
-- ipython profile create default
-- importnb-install
-- python -m pip install dist/deathbeds-*.tar.gz --ignore-installed --no-deps
+sudo: false
+
+dist: trusty
+
+env:
+  - MINICONDA_VERSION=4.5.4 CONDA_DIR=$HOME/miniconda3
+
+cache:
+  directories:
+    - $HOME/download
+    # - $HOME/.cache/pip
+    # - $CONDA_DIR/pkgs
 
 before_install:
-- sudo apt-get install graphviz
+  - /bin/bash ./.ci/travis_before_install.sh
+
+install:
+  - /bin/bash ./.ci/travis_install.sh
 
 script:
-# on a branch only the notebook on the branch should run; on master everything.
-- jupyter nbconvert --execute --ExecutePreprocessor.kernel_name=python --to notebook deathbeds/*.ipynb
+  - /bin/bash ./.ci/travis_script.sh
 
 deploy:
   provider: pypi
