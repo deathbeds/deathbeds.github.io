@@ -9,3 +9,5 @@ ls deathbeds/*.ipynb |
     --execute \
     --ExecutePreprocessor.kernel_name=python \
     --to notebook
+
+ipython -m deathbeds.tests -- --verbose
