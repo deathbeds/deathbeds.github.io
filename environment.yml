@@ -121,3 +121,4 @@ dependencies:
     - google
     - poser
     - pywt
+    - stopit
