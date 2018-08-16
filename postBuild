@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -ex
 
+python -m pip install -r requirements-git.txt
+
 LABEXTENSIONS='
   @jupyter-widgets/jupyterlab-manager@0.36
   @jupyterlab/hub-extension@0.10.0
