@@ -4,6 +4,17 @@ set -ex
 python -m pip install -r requirements-git.txt
 
 LABEXTENSIONS='
+  @deathbeds/jupyterlab-font-anonymous-pro@0.4.0
+  @deathbeds/jupyterlab-font-dejavu-sans-mono@0.4.0
+  @deathbeds/jupyterlab-font-fira-code@0.4.0
+  @deathbeds/jupyterlab-fonts@0.4.0
+  @deathbeds/jyve-kyrnel-brython-unsafe@0.5.0
+  @deathbeds/jyve-kyrnel-coffee-unsafe@0.5.0
+  @deathbeds/jyve-kyrnel-js-unsafe@0.5.0
+  @deathbeds/jyve-kyrnel-p5-unsafe@0.5.0
+  @deathbeds/jyve-kyrnel-typescript-unsafe@0.5.0
+  @deathbeds/jyve-lyb-phosphor@0.5.0
+  @deathbeds/jyve@0.5.0
   @jupyter-widgets/jupyterlab-manager@0.36
   @jupyterlab/hub-extension@0.10.0
   bqplot@0.4.1
@@ -12,7 +23,7 @@ LABEXTENSIONS='
   jupyter-threejs@1.1.0
   jupyterlab_bokeh@0.6.1
   jupyterlab-toc@0.3.1
-  '
+'
 
 jupyter labextension install --no-build ${LABEXTENSIONS}
 jupyter lab build --dev
