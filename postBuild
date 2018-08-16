@@ -9,3 +9,10 @@ do
 done
 jupyter lab build --dev
 jupyter labextension list | sort
+
+if [ "${NB_UID}not-on-binder" = "not-on-binder" ]; then
+  echo "...probably not on binder, leaving env node_modules"
+else
+  echo "...cleaning out jupyterlab staging"
+  rm -rf ${CONDA_DIR}/share/jupyter/lab/staging
+fi
