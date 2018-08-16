@@ -13,7 +13,6 @@
 @jupyterlab/hub-extension@0.10.0
 bqplot@0.4.1
 ipyvolume@0.4.6
-jupyter-leaflet@0.9.0
 jupyter-threejs@1.1.0
 jupyterlab_bokeh@0.6.1
 @jupyterlab/toc@0.3.1

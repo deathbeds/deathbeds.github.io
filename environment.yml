@@ -38,7 +38,6 @@ dependencies:
   - idna
   - importlib_resources
   - ipykernel
-  - ipyleaflet
   - ipyparallel
   - IPython
   - ipython_genutils
