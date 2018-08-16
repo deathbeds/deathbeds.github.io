@@ -37,7 +37,6 @@ dependencies:
   - hypothesis
   - idna
   - importlib_resources
-  - importnb
   - ipykernel
   - ipyleaflet
   - ipyparallel
@@ -85,6 +84,7 @@ dependencies:
   - py
   - pygments
   - pygraphviz
+  - pyhamcrest
   - pyparsing
   - pytest
   - python >=3.6,<3.7
@@ -100,6 +100,7 @@ dependencies:
   - scipy
   - seaborn
   - setuptools
+  - setuptools <=39.1.0
   - shapely
   - simplegeneric
   - simplejson
