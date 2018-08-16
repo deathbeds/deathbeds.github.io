@@ -15,5 +15,5 @@
 bqplot@0.4.1
 ipyvolume@0.4.6
 jupyter-threejs@1.1.0
+jupyter-webrtc@0.4.0
 jupyterlab_bokeh@0.6.1
-jupyterlab-webrtc@0.4.0
