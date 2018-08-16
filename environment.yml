@@ -42,6 +42,7 @@ dependencies:
   - IPython
   - ipython_genutils
   - ipyvolume
+  - ipywebrtc
   - ipywidgets
   - itsdangerous
   - jedi
