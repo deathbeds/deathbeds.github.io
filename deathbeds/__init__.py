@@ -1,2 +1,3 @@
 from . import data
-from .extensions import load_ipython_extension
+with __import__('importnb').Notebook():
+    from .extensions import load_ipython_extension

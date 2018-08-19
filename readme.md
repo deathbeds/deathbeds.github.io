@@ -1,5 +1,5 @@
 
-# <big><big><big>REST💀IN💀PXXXLS</big></big></big>
+# `REST💀IN💀PXXXLS`
 
 ## Deathbeds is a coding collective that values
 
