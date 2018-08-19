@@ -8,7 +8,6 @@ dependencies:
   - appdirs
   - beautifulsoup4
   - black
-  - bokeh
   - bottleneck
   - bqplot
   - cadquery
@@ -100,9 +99,9 @@ dependencies:
   - scikit-image
   - scipy
   - seaborn
-  - setuptools
   - setuptools <=39.1.0
   - shapely
+  - sidecar
   - simplegeneric
   - simplejson
   - six

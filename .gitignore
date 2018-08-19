@@ -109,3 +109,5 @@ _site
 .notes
 node_modules/
 envs/
+.projectignore
+anaconda-project.yml
