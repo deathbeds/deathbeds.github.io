@@ -101,7 +101,6 @@ dependencies:
   - seaborn
   - setuptools <=39.1.0
   - shapely
-  - sidecar
   - simplegeneric
   - simplejson
   - six
@@ -125,4 +124,5 @@ dependencies:
     - google
     - poser
     - pywt
+    - sidecar
     - svgpathtools
