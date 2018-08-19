@@ -88,6 +88,7 @@ dependencies:
   - pyparsing
   - pytest
   - python >=3.6,<3.7
+  - python-graphviz
   - pythreejs
   - pytz
   - pyyaml
