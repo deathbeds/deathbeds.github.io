@@ -9,6 +9,7 @@
 @deathbeds/jyve-kyrnel-typescript-unsafe@0.5.0
 @deathbeds/jyve-lyb-phosphor@0.5.0
 @deathbeds/jyve@0.5.0
+@deathbeds/jupyterlab-literallycanvas@0.2.0
 @jupyter-widgets/jupyterlab-manager@0.36
 @jupyterlab/hub-extension@0.10.0
 @jupyterlab/toc@0.3.1
