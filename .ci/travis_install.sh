@@ -16,6 +16,4 @@ ipython profile create default
 
 importnb-install
 
-python -c "__import__('importnb.utils.ipython').utils.ipython.install('pidgin')"
-
 python -m pip install dist/deathbeds-*.tar.gz --ignore-installed --no-deps
