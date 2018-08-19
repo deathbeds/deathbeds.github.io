@@ -108,6 +108,7 @@ dependencies:
   - six
   - stdlib-list
   - stopit
+  - svgwrite
   - sympy
   - tensorflow
   - testpath
@@ -125,3 +126,4 @@ dependencies:
     - google
     - poser
     - pywt
+    - svgpathtools
