@@ -1,4 +1,4 @@
-@deathbeds/jupyterlab_graphviz@0.1.0
+@deathbeds/jupyterlab_graphviz@0.1.1
 @deathbeds/jupyterlab-font-anonymous-pro@0.5.0
 @deathbeds/jupyterlab-font-dejavu-sans-mono@0.5.0
 @deathbeds/jupyterlab-font-fira-code@0.5.0
