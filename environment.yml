@@ -64,7 +64,6 @@ dependencies:
   - multipledispatch
   - mypy
   - nbconvert
-  - nbdime
   - nbformat
   - networkx
   - nodejs >=8,<9
