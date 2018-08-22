@@ -12,7 +12,7 @@
 @deathbeds/jyve-lyb-phosphor@0.6.0
 @deathbeds/jyve@0.6.0
 @jupyter-widgets/jupyterlab-manager@0.37.2
-@jupyter-widgets/jupyterlab-sidecar@0.2.0
+@jupyter-widgets/jupyterlab-sidecar@0.3.0
 @jupyterlab/hub-extension@0.11.0
 @jupyterlab/toc@0.4.0
 bqplot@0.4.1
