@@ -36,6 +36,7 @@ dependencies:
   - hypothesis
   - idna
   - importlib_resources
+  - importnb
   - ipykernel
   - ipyparallel
   - IPython
@@ -50,7 +51,7 @@ dependencies:
   - jsonschema
   - jupyter_client
   - jupyter_core
-  - jupyterlab >=0.34,<0.35
+  - jupyterlab >=0.34.1,<0.35
   - libpng
   - luigi
   - lxml
@@ -122,6 +123,7 @@ dependencies:
   - pip:
     - attr
     - google
+    - pidgin
     - poser
     - pywt
     - sidecar
