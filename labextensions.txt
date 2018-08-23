@@ -14,6 +14,7 @@
 @jupyter-widgets/jupyterlab-manager@0.37.2
 @jupyter-widgets/jupyterlab-sidecar@0.3.0
 @jupyterlab/hub-extension@0.11.0
+@jupyterlab/statusbar@0.4.1
 @jupyterlab/toc@0.4.0
 bqplot@0.4.1
 jupyter-threejs@1.1.0
