@@ -107,7 +107,6 @@ dependencies:
   - stopit
   - svgwrite
   - sympy
-  - tensorflow
   - testpath
   - toolz
   - tornado
