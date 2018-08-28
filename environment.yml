@@ -1,14 +1,13 @@
 name: deathbeds
 
 channels:
-  - defaults
   - conda-forge
+  - defaults
 
 dependencies:
   - appdirs
   - beautifulsoup4
   - black
-  - bokeh
   - bottleneck
   - bqplot
   - cadquery
@@ -34,15 +33,15 @@ dependencies:
   - giflib
   - graphviz
   - greenlet
+  - hypothesis
   - idna
   - importlib_resources
   - importnb
   - ipykernel
-  - ipyleaflet
   - ipyparallel
   - IPython
   - ipython_genutils
-  - ipyvolume
+  - ipywebrtc
   - ipywidgets
   - itsdangerous
   - jedi
@@ -51,7 +50,7 @@ dependencies:
   - jsonschema
   - jupyter_client
   - jupyter_core
-  - jupyterlab >=0.32,<0.33
+  - jupyterlab ==0.34.0
   - libpng
   - luigi
   - lxml
@@ -64,7 +63,6 @@ dependencies:
   - multipledispatch
   - mypy
   - nbconvert
-  - nbdime
   - nbformat
   - networkx
   - nodejs >=8,<9
@@ -84,27 +82,31 @@ dependencies:
   - py
   - pygments
   - pygraphviz
+  - pyhamcrest
   - pyparsing
   - pytest
   - python >=3.6,<3.7
+  - python-graphviz
   - pythreejs
   - pytz
   - pyyaml
   - pyzmq
+  - qrcode
   - requests
   - retype
   - rise
   - scikit-image
   - scipy
   - seaborn
-  - setuptools
+  - setuptools <=39.1.0
   - shapely
   - simplegeneric
   - simplejson
   - six
   - stdlib-list
+  - stopit
+  - svgwrite
   - sympy
-  - tensorflow
   - testpath
   - toolz
   - tornado
@@ -115,9 +117,11 @@ dependencies:
   - wcwidth
   - werkzeug
   - xlrd
-  - qrcode
   - pip:
     - attr
     - google
+    - pidgin
     - poser
     - pywt
+    - sidecar
+    - svgpathtools

@@ -5,7 +5,10 @@ sudo: false
 dist: trusty
 
 env:
-  - MINICONDA_VERSION=4.5.4 CONDA_DIR=$HOME/miniconda3
+  - >
+    MINICONDA_VERSION=4.5.4
+    MINICONDA_MD5=a946ea1d0c4a642ddf0c3a26a18bb16d
+    CONDA_DIR=$HOME/miniconda3
 
 cache:
   directories:
