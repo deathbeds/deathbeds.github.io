@@ -12,7 +12,7 @@ https://badges.gitter.im/deathbeds.png)](https://gitter.im/deathbeds/Lobby)
 ### The Scientific Method
 ### The Laws of Thermodynamics
 
-_**We are not original, we just do things different.  We are learning to be ourselves in data.**_
+_**We are not original, we just do things different.**_
 
 ## [New contributors are always welcome.](https://github.com/deathbeds/deathbeds.github.io)
 
