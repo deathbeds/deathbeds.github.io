@@ -1,0 +1,4 @@
+nbsphinx
+nikola
+gitpython
+importlib_resources
