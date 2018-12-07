@@ -6,10 +6,10 @@ with (Path(__file__).parent / 'deathbeds' / '_version.py').open('r') as file:
 __import__('setuptools').setup(
     name="deathbeds",
     version=__version__,
-    author="deathbeds", 
+    author="deathbeds",
     author_email="tony.fast@gmail.com",
-    description="sand to sand, silicon to silicon", 
+    description="sand to sand, silicon to silicon",
     license="BSD-3-Clause",
     packages=['deathbeds', 'deathbeds.data'],
-    install_requires=['importnb', 'poser'],
+    install_requires=['importnb'],
     include_package_data=True)
