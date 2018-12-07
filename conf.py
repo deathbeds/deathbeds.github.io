@@ -70,7 +70,7 @@ language = None
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
 exclude_patterns = [
-    '**.ipynb_checkpoints', '.eggs*', '.tox*', 'build', 'dist', '_build', 'Thumbs.db', '.DS_Store']
+    'docs', '**.ipynb_checkpoints', '.eggs*', '.tox*', 'build', 'dist', '_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -171,8 +171,8 @@ texinfo_documents = [
 intersphinx_mapping = {'https://docs.python.org/': None}
 
 def setup(app):
-    __import__('os').system("nikola build --conf=confblog.py")
-
+    #__import__('os').system("nikola build --conf=confblog.py")
+    ...
 # Load the other configuration so that the Nikola CLI still works.
 if not __import__('os').environ.get('READTHEDOCS', None):
     from confblog import *
